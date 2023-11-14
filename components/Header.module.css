@@ -1,0 +1,58 @@
+.header {
+  height: 25rem;
+  margin-top: 1rem;
+  margin: 0 auto;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  /* background-color: transparent; */
+  background-color: #fff;
+  z-index: 99;
+}
+
+.nav_content {
+  width: 100%;
+  max-width: 70rem;
+  height: 4rem;
+  padding: 1rem 1.5rem;
+  margin: 0 auto;
+}
+
+.name {
+  display: inline-block;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.menu {
+  float: right;
+  display: flex;
+  gap: 2rem;
+}
+
+.menu div {
+  cursor: pointer;
+}
+
+.header_main {
+  position: relative;
+}
+
+.header_main_content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+}
+
+.header_main_title {
+  /* font-family: "Gasoek One", sans-serif; */
+  /* font-family: "Noto Sans KR", sans-serif; */
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 4rem;
+}
