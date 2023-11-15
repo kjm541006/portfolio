@@ -24,14 +24,26 @@ const Main = () => {
             <div className={styles.aboutme_info_edu_title}>학력</div>
             <div className={styles.aboutme_info_edu_content}>가톨릭대학교 컴퓨터정보공학부</div>
           </div>
-          <div className={styles.aboutme_info_contact}>
-            <div>연락처</div>
-            <div>010-2831-7006</div>
+        </div>
+      </div>
+      <div className={styles.contact_wrapper}>
+        <div className={styles.contact_title}>
+          <div className={styles.contact_title_text}>Contact</div>
+        </div>
+        <div className={styles.contact_info}>
+          <div className={styles.contact_info_phone}>
+            <div className={styles.contact_info_phone_title}>연락처</div>
+            <div className={styles.contact_info_phone_content}>010-2831-7006</div>
           </div>
-          <div className={styles.aboutme_info_email}>
-            <div>이메일</div>
-            <div>kjm541113@gmail.com</div>
+          <div className={styles.contact_info_email}>
+            <div className={styles.contact_info_email_title}>이메일</div>
+            <div className={styles.contact_info_email_content}>kjm541113@gmail.com</div>
           </div>
+        </div>
+      </div>
+      <div className={styles.skills_wrapper}>
+        <div className={styles.skills_title}>
+          <div className={styles.contact_title_text}>Skills</div>
         </div>
       </div>
     </div>

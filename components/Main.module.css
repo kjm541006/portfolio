@@ -1,6 +1,5 @@
 .main {
-  background-color: yellow;
-  height: 1000px;
+  background-color: beige;
 }
 
 .aboutme_wrapper {
@@ -8,21 +7,27 @@
   max-width: 70rem;
   padding: 4rem 2rem;
   margin: 0 auto;
+  /* background-color: skyblue; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.aboutme_title {
+.aboutme_title,
+.contact_title {
   margin: 0 auto 3rem;
-  position: relative;
+  /* position: relative; */
+  /* text-align-last: left; */
 }
 
-.aboutme_title_text {
+.aboutme_title_text,
+.contact_title_text {
   text-align: center;
   font-size: 3rem;
   font-weight: 400;
   font-family: "Black Han Sans", sans-serif;
 }
 
-.aboutme_info {
+.aboutme_info,
+.contact_info {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -31,7 +36,9 @@
 .aboutme_info_name,
 .aboutme_info_birth,
 .aboutme_info_loc,
-.aboutme_info_edu {
+.aboutme_info_edu,
+.contact_info_phone,
+.contact_info_email {
   width: 50%;
   text-align: center;
   margin-bottom: 2rem;
@@ -40,15 +47,36 @@
 .aboutme_info_name_title,
 .aboutme_info_birth_title,
 .aboutme_info_loc_title,
-.aboutme_info_edu_title {
-  font-size: 2.5rem;
+.aboutme_info_edu_title,
+.contact_info_phone_title,
+.contact_info_email_title {
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .aboutme_info_name_content,
 .aboutme_info_birth_content,
 .aboutme_info_loc_content,
-.aboutme_info_edu_content {
+.aboutme_info_edu_content,
+.contact_info_phone_content,
+.contact_info_email_content {
   margin-top: 1rem;
   font-size: 1.2rem;
+}
+
+/* ================== contact ================== */
+
+.contact_wrapper {
+  width: 100%;
+  max-width: 70rem;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+}
+
+.skills_wrapper {
+  min-height: 100vh;
+  width: 100%;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  background-color: tomato;
 }

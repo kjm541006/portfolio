@@ -1,7 +1,13 @@
 .header {
-  height: 25rem;
+  height: 27rem;
   margin-top: 1rem;
   margin: 0 auto;
+  position: relative;
+  min-height: 350px;
+}
+
+.header_img {
+  opacity: 0.5;
 }
 
 .navbar {
@@ -9,9 +15,15 @@
   top: 0;
   right: 0;
   left: 0;
-  /* background-color: transparent; */
-  background-color: #fff;
+  background-color: transparent;
   z-index: 99;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* 색상 및 그림자 변화에 대한 애니메이션 효과 */
+  box-shadow: none; /* 초기 그림자 없음 */
+}
+
+.navbar_white {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 설정 */
 }
 
 .nav_content {
@@ -41,12 +53,13 @@
 
 .header_main {
   position: relative;
+  /* color: #fff; */
 }
 
 .header_main_content {
   width: 100%;
   margin: 0 auto;
-  padding: 8rem 2rem 4rem;
+  padding: 10rem 2rem 4rem;
   text-align: center;
 }
 
