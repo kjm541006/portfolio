@@ -19,7 +19,8 @@
 }
 
 .aboutme_title_text,
-.contact_title_text {
+.contact_title_text,
+.skills_title_text {
   text-align: center;
   font-size: 3rem;
   font-weight: 400;
@@ -79,4 +80,29 @@
   padding: 4rem 2rem;
   margin: 0 auto;
   background-color: tomato;
+}
+
+.skills_info {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.skills_info_frontend {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+}
+
+.skills_info_frontend_title {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Black Han Sans", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.skills_info_frontend_content {
+  display: flex;
+  gap: 1rem;
 }
