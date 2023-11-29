@@ -29,7 +29,7 @@ const Header = () => {
       <Image className={styles.header_img} src={"/images/img.jpg"} layout="fill" objectFit="cover" objectPosition="center" />
       <nav className={`${styles.navbar} ${isNavbarWhite ? styles.navbar_white : ""}`}>
         <div className={styles.nav_content}>
-          <div className={styles.name}>오잉의 포트폴리오</div>
+          <div className={styles.name}>주민의 포트폴리오</div>
           <div className={styles.menu}>
             <div>About me</div>
             <div>Contact</div>
@@ -43,7 +43,7 @@ const Header = () => {
         <div className={styles.header_main_content}>
           <div className={styles.header_main_title}>
             <span>안녕하세요</span> <br />
-            <span>김오잉의 포트폴리오 입니다</span>
+            <span>김주민의 포트폴리오 입니다</span>
           </div>
         </div>
       </div>
