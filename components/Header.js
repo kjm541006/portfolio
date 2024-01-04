@@ -8,8 +8,6 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const y = window.scrollY;
-      console.log("y 값:", y);
-
       if (y >= 100) {
         setIsNavbarWhite(true);
       } else {

@@ -89,20 +89,24 @@
   padding: 4rem 2rem;
 }
 
-.skills_info_frontend {
+.skills_info_frontend,
+.skills_info_backend {
   background-color: #fff;
   padding: 2rem 3rem;
   border-radius: 1rem;
+  margin-bottom: 2rem;
 }
 
-.skills_info_frontend_title {
+.skills_info_frontend_title,
+.skills_info_backend_title {
   font-size: 2rem;
   font-weight: 400;
   font-family: "Black Han Sans", sans-serif;
   margin-bottom: 2rem;
 }
 
-.skills_info_frontend_content {
+.skills_info_frontend_content,
+.skills_info_backend_content {
   display: flex;
   gap: 1rem;
 }
