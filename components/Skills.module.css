@@ -1,3 +1,10 @@
+.skills_title_text {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Black Han Sans", sans-serif;
+}
+
 .skills_wrapper {
   min-height: 100vh;
   width: 100%;
@@ -14,15 +21,25 @@
 }
 
 .skills_info_frontend,
-.skills_info_backend {
+.skills_info_backend,
+.skills_info_others {
   background-color: #fff;
   padding: 2rem 3rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
+}
+
+.skills_info_frontend:hover,
+.skills_info_backend:hover,
+.skills_info_others:hover {
+  transform: translateY(-0.5rem);
+  transition: ease-in-out 0.3s;
 }
 
 .skills_info_frontend_title,
-.skills_info_backend_title {
+.skills_info_backend_title,
+.skills_info_others_title {
   font-size: 2rem;
   font-weight: 400;
   font-family: "Black Han Sans", sans-serif;
@@ -30,7 +47,8 @@
 }
 
 .skills_info_frontend_content,
-.skills_info_backend_content {
+.skills_info_backend_content,
+.skills_info_others_content {
   display: flex;
   justify-content: space-between;
 }
