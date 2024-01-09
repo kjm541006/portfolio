@@ -108,5 +108,5 @@
 .skills_info_frontend_content,
 .skills_info_backend_content {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
 }
