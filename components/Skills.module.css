@@ -1,0 +1,36 @@
+.skills_wrapper {
+  min-height: 100vh;
+  width: 100%;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  background-color: tomato;
+}
+
+.skills_info {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.skills_info_frontend,
+.skills_info_backend {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skills_info_frontend_title,
+.skills_info_backend_title {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Black Han Sans", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.skills_info_frontend_content,
+.skills_info_backend_content {
+  display: flex;
+  justify-content: space-between;
+}
