@@ -3,7 +3,7 @@ import styles from "./AboutMe.module.css";
 const AboutMe = () => {
   return (
     <>
-      <div className={styles.aboutme_wrapper}>
+      <div className={styles.aboutme_wrapper} id="aboutme">
         <div className={styles.aboutme_title}>
           <div className={styles.aboutme_title_text}>About me</div>
         </div>
@@ -26,7 +26,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className={styles.contact_wrapper}>
+      <div className={styles.contact_wrapper} id="contact">
         <div className={styles.contact_title}>
           <div className={styles.contact_title_text}>Contact</div>
         </div>

@@ -3,7 +3,7 @@ import styles from "./Skills.module.css";
 const Skills = () => {
   return (
     <>
-      <div className={styles.skills_wrapper}>
+      <div className={styles.skills_wrapper} id="skills">
         <div className={styles.skills_title}>
           <div className={styles.skills_title_text}>Skills</div>
         </div>

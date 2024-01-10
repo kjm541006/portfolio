@@ -29,11 +29,21 @@ const Header = () => {
         <div className={styles.nav_content}>
           <div className={styles.name}>주민의 포트폴리오</div>
           <div className={styles.menu}>
-            <div>About me</div>
-            <div>Contact</div>
-            <div>Skills</div>
-            <div>Projects</div>
-            <div>띠용</div>
+            <div>
+              <a href="#aboutme">About me</a>
+            </div>
+            <div>
+              <a href="#contact">Contact</a>
+            </div>
+            <div>
+              <a href="#skills">Skills</a>
+            </div>
+            <div>
+              <a href="#projects">Projects</a>
+            </div>
+            <div>
+              <a href="#">띠용</a>
+            </div>
           </div>
         </div>
       </nav>
