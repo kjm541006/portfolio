@@ -9,7 +9,6 @@
 .header_img {
   opacity: 0.5;
 }
-
 .navbar {
   position: fixed;
   top: 0;
@@ -20,7 +19,6 @@
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* 색상 및 그림자 변화에 대한 애니메이션 효과 */
   box-shadow: none; /* 초기 그림자 없음 */
 }
-
 .navbar_white {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 설정 */
@@ -53,7 +51,6 @@
 
 .header_main {
   position: relative;
-  /* color: #fff; */
 }
 
 .header_main_content {
@@ -68,4 +65,41 @@
   /* font-family: "Noto Sans KR", sans-serif; */
   font-family: "Black Han Sans", sans-serif;
   font-size: 4rem;
+}
+
+.menu_active {
+  display: block;
+}
+
+.hamburger_menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.hamburger_menu div {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #333;
+}
+
+@media all and (min-width: 1024px) {
+}
+
+/* phone tablet ~1023px */
+@media all and (max-width: 1023px) {
+  .navbar {
+    background-color: blue;
+  }
+
+  .hamburger_menu {
+    display: flex;
+  }
+
+  .menu_active {
+    display: flex;
+  }
 }
