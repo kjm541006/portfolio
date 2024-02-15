@@ -1,0 +1,43 @@
+.projects_wrapper {
+  min-height: 100vh;
+  width: 100%;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  background-color: yellow;
+}
+
+.projects_title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.projects_info {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.projects_info_project {
+  background-color: beige;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
+}
+
+.projects_info_project_title {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Black Han Sans", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.projects_info_project_subtitle {
+  font-weight: 300;
+  font-family: "Black Han Sans", sans-serif;
+  color: #444;
+  margin-bottom: 3rem;
+}

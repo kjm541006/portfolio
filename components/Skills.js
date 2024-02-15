@@ -190,7 +190,7 @@ const Skills = () => {
             </div>
           </div>
           <div className={styles.skills_info_others}>
-            <div className={styles.skills_info_others_title}>others</div>
+            <div className={styles.skills_info_others_title}>Others</div>
             <div className={styles.skills_info_others_content}>
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="git" width="150" height="150">

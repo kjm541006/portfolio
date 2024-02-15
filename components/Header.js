@@ -27,25 +27,43 @@ const Header = () => {
     };
   }, []);
 
+  const goToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  const goToAboutme = () => {
+    let topAboutMe = document.getElementById("aboutme");
+    topAboutMe.scrollIntoView();
+  };
+
+  const goToContact = () => {
+    let topContact = document.getElementById("contact");
+    topContact.scrollIntoView();
+  };
+
+  const goToSkills = () => {
+    let topSkills = document.getElementById("skills");
+    topSkills.scrollIntoView();
+  };
+
+  const goToProjects = () => {
+    let topProjects = document.getElementById("projects");
+    topProjects.scrollIntoView();
+  };
+
   return (
     <header className={styles.header}>
       <Image className={styles.header_img} src={"/images/img.jpg"} layout="fill" objectFit="cover" objectPosition="center" />
       <nav className={`${styles.navbar} ${isNavbarWhite ? styles.navbar_white : ""}`}>
         <div className={styles.nav_content}>
-          <div className={styles.name}>주민의 포트폴리오(개발중)</div>
+          <div className={styles.name} onClick={goToTop}>
+            주민의 포트폴리오(개발중)
+          </div>
           <div className={styles.menu}>
-            <div>
-              <a href="#aboutme">About me</a>
-            </div>
-            <div>
-              <a href="#contact">Contact</a>
-            </div>
-            <div>
-              <a href="#skills">Skills</a>
-            </div>
-            <div>
-              <a href="#projects">Projects</a>
-            </div>
+            <div onClick={() => goToAboutme()}>About me</div>
+            <div onClick={() => goToContact()}>Contact</div>
+            <div onClick={() => goToSkills()}>Skills</div>
+            <div onClick={() => goToProjects()}>Projects</div>
             <div>
               <a href="#"></a>
             </div>
