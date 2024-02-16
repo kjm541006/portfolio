@@ -52,3 +52,41 @@
   display: flex;
   justify-content: space-between;
 }
+
+/* phone tablet ~1023px */
+@media all and (max-width: 1023px) {
+  .skills_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills_info_frontend,
+  .skills_info_backend,
+  .skills_info_others {
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
+    text-align: center;
+    width: 50%;
+  }
+
+  .skills_info_frontend_title,
+  .skills_info_backend_title,
+  .skills_info_others_title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "Black Han Sans", sans-serif;
+    margin-bottom: 3rem;
+  }
+
+  .skills_info_frontend_content,
+  .skills_info_backend_content,
+  .skills_info_others_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
