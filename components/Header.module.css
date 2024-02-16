@@ -18,6 +18,7 @@
   z-index: 99;
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* 색상 및 그림자 변화에 대한 애니메이션 효과 */
   box-shadow: none; /* 초기 그림자 없음 */
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .navbar_white {
   background-color: #fff;
@@ -84,9 +85,6 @@
   width: 2rem;
   height: 0.25rem;
   background-color: #333;
-}
-
-@media all and (min-width: 1024px) {
 }
 
 /* phone tablet ~1023px */

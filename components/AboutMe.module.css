@@ -58,6 +58,8 @@
 .contact_info_email_content {
   margin-top: 1rem;
   font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
 }
 
 .contact_phone:hover,

@@ -70,6 +70,7 @@
     box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
     text-align: center;
     width: 50%;
+    min-width: 300px;
   }
 
   .skills_info_frontend_title,
@@ -87,6 +88,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
   }
 }
