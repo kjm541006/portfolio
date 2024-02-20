@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
+  word-break: keep-all;
 }
 
 html {
@@ -18,6 +19,8 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  overflow: hidden;
+  word-break: break-all;
 }
 * {
   box-sizing: border-box;

@@ -78,9 +78,18 @@
   .aboutme_title_text,
   .contact_title_text {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 400;
     font-family: "Black Han Sans", sans-serif;
+  }
+
+  .aboutme_info_name_title,
+  .aboutme_info_birth_title,
+  .aboutme_info_loc_title,
+  .aboutme_info_edu_title,
+  .contact_info_phone_title,
+  .contact_info_email_title {
+    font-size: 1.5rem;
   }
 
   .aboutme_info_name_content,
@@ -95,5 +104,12 @@
   .contact_info_phone_content,
   .contact_info_email_content {
     font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .contact_info_phone_content,
+  .contact_info_email_content {
+    font-size: 0.8rem;
   }
 }
