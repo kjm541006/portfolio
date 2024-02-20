@@ -4,36 +4,7 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
   const [isNavbarWhite, setIsNavbarWhite] = useState(null);
-  // const [isMenuActive, setIsMenuActive] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(null);
-
-  const toggleMenu = () => {
-    setIsMenuActive(!isMenuActive);
-  };
-
-  // useEffect(() => {
-  //   const checkScreenSize = () => {
-  //     setIsSmallScreen(window.innerWidth <= 1023);
-  //   };
-
-  //   const handleScroll = () => {
-  //     const y = window.scrollY;
-  //     if (y >= 100) {
-  //       setIsNavbarWhite(true);
-  //     } else {
-  //       setIsNavbarWhite(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("resize", checkScreenSize);
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   // 컴포넌트가 언마운트될 때 이벤트 리스너를 제거
-  //   return () => {
-  //     window.removeEventListener("resize", checkScreenSize);
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
 
   useEffect(() => {
     let checkScreenSize;
