@@ -1,9 +1,10 @@
 .header {
-  height: 27rem;
-  margin-top: 1rem;
+  /* height: 27rem; */
+  /* margin-top: 1rem; */
   margin: 0 auto;
   position: relative;
-  min-height: 350px;
+  /* min-height: 350px; */
+  min-width: none;
 }
 
 .header_img {
@@ -19,7 +20,7 @@
 
 .navbar {
   position: fixed;
-  top: 0;
+  /* top: 0; */
   right: 0;
   left: 0;
   background-color: transparent;
@@ -70,8 +71,6 @@
 }
 
 .header_main_title {
-  /* font-family: "Gasoek One", sans-serif; */
-  /* font-family: "Noto Sans KR", sans-serif; */
   font-family: "Black Han Sans", sans-serif;
   font-size: 4rem;
 }
@@ -97,6 +96,11 @@
 
 /* phone tablet ~1023px */
 @media all and (max-width: 1023px) {
+  .header_main_title {
+    font-size: 2.5rem;
+    word-break: keep-all;
+  }
+
   .navbar {
     background-color: blue;
   }
@@ -107,9 +111,5 @@
 
   .menu_active {
     display: flex;
-  }
-
-  .header_main_title {
-    font-size: 3rem;
   }
 }

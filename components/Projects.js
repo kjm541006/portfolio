@@ -22,7 +22,7 @@ const Projects = () => {
                 <div className={styles.projects_info_detail_title}>
                   <b>개발배경</b>
                 </div>
-                <div className={styles.projects_info_detail_content}>
+                <div className={`${styles.projects_info_detail_content} ${styles.break_word}`}>
                   취업준비생의 입장에서 만든 취업준비생들을 위한 <span className={styles.red}>취업활동에 도움을 주는 웹사이트</span>입니다.
                   취업 준비 시 필요한 정보와 같은 직무 희망자들 간의 정보 공유 및 스터디 등 정보공유를 하며 취업에 도움이 되는 활동을 할 수
                   있도록 개발하였습니다.
@@ -32,7 +32,7 @@ const Projects = () => {
                 <div className={styles.projects_info_detail_title}>
                   <b>배운점</b>
                 </div>
-                <div className={styles.projects_info_detail_content}>
+                <div className={`${styles.projects_info_detail_content} ${styles.break_word}`}>
                   프론트엔드, 백엔드, 데이터베이스 등 여러가지 기술을 활용해{" "}
                   <span className={styles.red}>전체적인 개발과정을 경험하는 좋은 계기</span>가 되었고 팀프로젝트를 진행하면서{" "}
                   <span className={styles.red}>협업 능력</span>을 키울 수 있었습니다. 또한, 새로운 기술을 배우고 적용하는 과정에서 마주치는
@@ -48,7 +48,7 @@ const Projects = () => {
                 <div className={styles.projects_info_detail_title}>
                   URL :{" "}
                   <a
-                    className={styles.projects_info_detail_content}
+                    className={`${styles.projects_info_detail_content} ${styles.break_word}`}
                     href="http://43.202.98.45:8090/"
                     target="_blank"
                     rel="noopener noreferrer"

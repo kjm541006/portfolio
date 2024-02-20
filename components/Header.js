@@ -87,8 +87,9 @@ const Header = () => {
       <div className={styles.header_main}>
         <div className={styles.header_main_content}>
           <div className={styles.header_main_title}>
-            <div>안녕하세요</div>
-            <div>김주민의 포트폴리오 입니다</div>
+            안녕하세요
+            <br />
+            김주민의 포트폴리오 입니다
           </div>
         </div>
       </div>

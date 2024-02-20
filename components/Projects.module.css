@@ -70,4 +70,8 @@
 
 a.projects_info_detail_content {
   text-decoration: underline;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
