@@ -17,7 +17,7 @@
   width: 100%;
   max-width: 70rem;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 0;
 }
 
 .projects_info_project {
@@ -40,4 +40,34 @@
   font-family: "Black Han Sans", sans-serif;
   color: #444;
   margin-bottom: 3rem;
+}
+
+.projects_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.projects_info_detail_title {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.projects_info_detail_content {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.15rem;
+  font-weight: normal;
+}
+
+.red {
+  color: #ea3065;
+  font-weight: 600;
+}
+
+a.projects_info_detail_content {
+  text-decoration: underline;
 }
