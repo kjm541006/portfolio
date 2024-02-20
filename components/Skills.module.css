@@ -69,7 +69,8 @@
   .skills_info_backend,
   .skills_info_others {
     text-align: center;
-    width: 60%;
+    width: 100%;
+    max-width: 600px;
   }
 
   .skills_info_frontend_title,
