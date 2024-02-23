@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Projects.module.css";
 import Image from "next/image";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Projects = () => {
   return (
@@ -14,7 +16,17 @@ const Projects = () => {
             <div className={styles.projects_info_project_title}>Catch Job</div>
             <div className={styles.projects_info_project_subtitle}>2023.08 (팀 프로젝트)</div>
             <div className={styles.projects_info_project_content}>
-              <Image className={styles.projects_img} src={"/images/catchjob.png"} width="450" height="300" />
+              <Carousel autoPlay infiniteLoop>
+                <div>
+                  <img className={styles.projects_img} src={"/images/catchjob.png"} width="450" height="300" />
+                </div>
+                <div>
+                  <img className={styles.projects_img} src={"/images/catchjob.png"} width="450" height="300" />
+                </div>
+                <div>
+                  <img className={styles.projects_img} src={"/images/catchjob.png"} width="450" height="300" />
+                </div>
+              </Carousel>
               <div className={styles.projects_info_project_content_detail}></div>
             </div>
             <div className={styles.projects_info_detail}>

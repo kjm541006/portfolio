@@ -90,18 +90,24 @@
   }
 
   .nav_content_mobile {
-    padding: 0 1.5rem;
+    padding-left: 1.5rem;
     max-height: 0;
     transition: max-height 0.3s ease;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
     font-weight: 600;
   }
 
+  .nav_content_mobile > div {
+    padding: 0.5rem 0;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
   .nav_content_mobile > div:hover {
-    color: red;
+    color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
 
