@@ -86,10 +86,4 @@ a.projects_info_detail_content {
   .projects_title {
     font-size: 2.5rem;
   }
-
-  .projects_info_detail_url,
-  .projects_info_detail_github {
-    /* display: flex; */
-    /* flex-direction: column; */
-  }
 }
