@@ -9,9 +9,14 @@ const ProjectInfo = ({ info }) => (
     <div className={styles.projects_info_project_subtitle}>{info.subtitle}</div>
     <div className={styles.projects_info_project_content}>
       <Carousel autoPlay infiniteLoop>
-        <div>
-          <img className={styles.projects_img} src="/images/catchjob.png" width="450" height="300" />
-        </div>
+        {info.images?.map((image, index) => (
+          <div key={index}>
+            <img className={styles.projects_img} src={image} width="450" height="300" />
+          </div>
+        ))}
+        {/* <div>
+          <img className={styles.projects_img} src={info.image} width="450" height="300" />
+        </div> */}
       </Carousel>
       <div className={styles.projects_info_project_content_detail}></div>
     </div>
@@ -62,6 +67,7 @@ const Projects = () => {
   const CATCHJOB_INFO = {
     title: "Catch Job",
     subtitle: "2023.08 (팀 프로젝트)",
+    images: ["/images/catchjob.png", "/images/catchjob.png", "/images/catchjob.png"],
     background: [
       "취업준비생의 입장에서 만든 취업준비생들을 위한 ",
       <span className={styles.red}>취업활동에 도움을 주는 웹사이트</span>,
@@ -81,6 +87,7 @@ const Projects = () => {
   const PORTFOLIO_INFO = {
     title: "Portfolio",
     subtitle: "2023.08 (개인 프로젝트)",
+    images: ["/images/catchjob.png", "/images/catchjob.png", "/images/catchjob.png"],
     background: [
       "여러 프로젝트들을 경험하면서 만든 ",
       <span className={styles.red}>프로젝트들을 보기 좋게 정리</span>,
