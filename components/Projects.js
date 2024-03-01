@@ -14,9 +14,6 @@ const ProjectInfo = ({ info }) => (
             <img className={styles.projects_img} src={image} width="450" height="300" />
           </div>
         ))}
-        {/* <div>
-          <img className={styles.projects_img} src={info.image} width="450" height="300" />
-        </div> */}
       </Carousel>
       <div className={styles.projects_info_project_content_detail}></div>
     </div>
