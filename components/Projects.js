@@ -84,7 +84,7 @@ const Projects = () => {
   const PORTFOLIO_INFO = {
     title: "Portfolio",
     subtitle: "2023.08 (개인 프로젝트)",
-    images: ["/images/catchjob.png", "/images/catchjob.png", "/images/catchjob.png"],
+    images: ["/images/portfolio1.png", "/images/portfolio2.png", "/images/portfolio3.png"],
     background: [
       "여러 프로젝트들을 경험하면서 만든 ",
       <span className={styles.red}>프로젝트들을 보기 좋게 정리</span>,
