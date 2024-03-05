@@ -92,7 +92,6 @@ const Projects = () => {
       <span className={styles.red}>반응형으로 제작</span>,
       "하여 모바일 사용자도 고려하여 제작하였습니다. 또한 프론트엔드 배포를 경험하기 위해 serverless 아키텍처 기반인 ",
       <span className={styles.red}>Vercel을 사용하여 배포하였습니다.</span>,
-      // 반응형 구현 테스트 해야함
     ],
     learned: [
       "Next.js를 활용하여 제작하면서 ",
@@ -102,6 +101,7 @@ const Projects = () => {
       "를 높일 수 있었습니다. 또한 serverless 배포 방식인 Vercel을 사용하여 배포하면서 서버를 신경쓰지 않고 ",
       <span className={styles.red}>프론트엔드 배포</span>,
       "에만 신경 쓸 수 있었습니다.",
+      // 반응형 구현 테스트 하고 배운점에 추가
     ],
     tech: "Next.js, React, CSS, Vercel",
     url: "https://jumin-portfolio.vercel.app/",
