@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Projects.module.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Image from "next/image";
 
 const ProjectInfo = ({ info }) => (
   <div className={styles.projects_info_project}>
@@ -11,7 +12,7 @@ const ProjectInfo = ({ info }) => (
       <Carousel autoPlay infiniteLoop>
         {info.images?.map((image, index) => (
           <div key={index}>
-            <img className={styles.projects_img} src={image} width="450" height="300" />
+            <Image className={styles.projects_img} src={image} width="2560" height="1440" />
           </div>
         ))}
       </Carousel>
@@ -64,7 +65,7 @@ const Projects = () => {
   const CATCHJOB_INFO = {
     title: "Catch Job",
     subtitle: "2023.08 (팀 프로젝트)",
-    images: ["/images/catchjob.png", "/images/catchjob.png", "/images/catchjob.png"],
+    images: ["/images/catchjob.png", "/images/catchjob2.png", "/images/catchjob3.png"],
     background: [
       "취업준비생의 입장에서 만든 취업준비생들을 위한 ",
       <span className={styles.red}>취업활동에 도움을 주는 웹사이트</span>,
