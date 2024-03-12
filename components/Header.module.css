@@ -22,7 +22,7 @@
   background-color: transparent;
   z-index: 99;
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* 색상 및 그림자 변화에 대한 애니메이션 효과 */
-  box-shadow: none; /* 초기 그림자 없음 */
+  box-shadow: none;
 }
 .navbar_white {
   background-color: #fff;

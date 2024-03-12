@@ -3,15 +3,12 @@
   max-width: 70rem;
   padding: 6rem 2rem 4rem;
   margin: 0 auto;
-  /* background-color: skyblue; */
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .aboutme_title,
 .contact_title {
   margin: 0 auto 3rem;
-  /* position: relative; */
-  /* text-align-last: left; */
 }
 
 .aboutme_title_text,
