@@ -1,5 +1,14 @@
 # 김주민의 포트폴리오
 
+### Frontend Engineer, Web Developer
+
+### Profile
+
+---
+
+1997년 5월 4일  
+가톨릭대학교 졸업
+
 ### 🔗 URL
 
 https://jumin-portfolio.vercel.app
