@@ -25,3 +25,9 @@
 ## 배운점
 
 Next.js를 활용하여 제작하면서 Next.js에 대한 이해도를 높일 수 있었으며, 반응형으로 개발하여 반응형 웹 제작에 대한 이해도를 한층 더 높일 수 있었습니다. 또한 serverless 배포 방식인 Vercel을 사용하여 배포하면서 서버를 신경쓰지 않고 프론트엔드 배포에만 신경 쓸 수 있었습니다.
+
+## 사용기술
+
+### Frontend : Next.js, Javascript, css-module
+
+### Deployment : Vercel
