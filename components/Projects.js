@@ -10,8 +10,8 @@ const ProjectInfo = ({ info }) => (
     <div className={styles.projects_info_project_subtitle}>{info.subtitle}</div>
     <div className={styles.projects_info_project_content}>
       <Carousel autoPlay infiniteLoop>
-        {info.images?.map((image, index) => (
-          <div key={index}>
+        {info.images?.map((image) => (
+          <div key={image}>
             <Image className={styles.projects_img} src={image} width="2560" height="1440" />
           </div>
         ))}
@@ -62,8 +62,31 @@ const ProjectInfo = ({ info }) => (
 );
 
 const Projects = () => {
+  const TODOS_INFO = {
+    title: "Todos",
+    id: "todos",
+    subtitle: "2022 (개인 프로젝트)",
+    images: ["/images/todos.png", "/images/todos2.png", "/images/todos3.png", "/images/todos4.png"],
+    background: [
+      "React를 이용하여 만든 ",
+      <span className={styles.red}>TodoList 웹사이트</span>,
+      "입니다. 사용자가 할 일을 추가하고 삭제할 수 있으며, 완료한 일을 체크하여 완료한 일을 확인할 수 있습니다.",
+    ],
+    learned: [
+      "React를 이용하여 개발하면서 ",
+      <span className={styles.red}>React와 Recoil, Styled-components</span>,
+      "를 사용하여 개발하였으며, ",
+      <span className={styles.red}>상태관리 및 CSS-in-JS</span>,
+      "에 대한 이해도를 높일 수 있었습니다.",
+    ],
+    tech: "React, Recoil, Styled-components",
+    url: "https://kjm541006.github.io/todos/",
+    github: "https://github.com/kjm541006/todo-list",
+  };
+
   const CATCHJOB_INFO = {
     title: "Catch Job",
+    id: "catchjob",
     subtitle: "2023.08 (팀 프로젝트)",
     images: ["/images/catchjob.png", "/images/catchjob2.png", "/images/catchjob3.png"],
     background: [
@@ -84,6 +107,7 @@ const Projects = () => {
 
   const PORTFOLIO_INFO = {
     title: "Portfolio",
+    id: "portfolio",
     subtitle: "2023.11 (개인 프로젝트)",
     images: ["/images/portfolio1.png", "/images/portfolio2.png", "/images/portfolio3.png"],
     background: [
@@ -109,7 +133,7 @@ const Projects = () => {
     github: "https://github.com/kjm541006/portfolio",
   };
 
-  const projectInfos = [CATCHJOB_INFO, PORTFOLIO_INFO];
+  const projectInfos = [TODOS_INFO, CATCHJOB_INFO, PORTFOLIO_INFO];
 
   return (
     <>
@@ -118,8 +142,8 @@ const Projects = () => {
           <div className={styles.projects_title_text}>Projects</div>
         </div>
         <div className={styles.projects_info}>
-          {projectInfos.map((info, index) => (
-            <ProjectInfo key={index} info={info} />
+          {projectInfos.map((info) => (
+            <ProjectInfo key={info.id} info={info} />
           ))}
         </div>
       </div>
