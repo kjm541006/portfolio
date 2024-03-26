@@ -74,7 +74,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <Image className={styles.header_img} src={"/images/img.jpg"} width={2400} height={1350} />
+      <Image className={styles.header_img} src={"/images/img.jpg"} width={2400} height={1350} alt="헤더이미지" />
       <nav className={`${styles.navbar} ${isNavbarWhite ? styles.navbar_white : ""}`}>
         <div className={styles.nav_content}>
           <div className={styles.name} onClick={goToTop}>

@@ -9,10 +9,10 @@ const ProjectInfo = ({ info }) => (
     <div className={styles.projects_info_project_title}>{info.title}</div>
     <div className={styles.projects_info_project_subtitle}>{info.subtitle}</div>
     <div className={styles.projects_info_project_content}>
-      <Carousel autoPlay infiniteLoop>
+      <Carousel autoPlay infiniteLoop showThumbs={false}>
         {info.images?.map((image) => (
           <div key={image}>
-            <Image className={styles.projects_img} src={image} width="2560" height="1440" />
+            <Image className={styles.projects_img} src={image} width="2560" height="1440" alt={image} />
           </div>
         ))}
       </Carousel>
@@ -142,9 +142,7 @@ const Projects = () => {
           <div className={styles.projects_title_text}>Projects</div>
         </div>
         <div className={styles.projects_info}>
-          {projectInfos.map((info) => (
-            <ProjectInfo key={info.id} info={info} />
-          ))}
+          {projectInfos.map((info) => (console.log(info), (<ProjectInfo key={info.id} info={info} />)))}
         </div>
       </div>
     </>
