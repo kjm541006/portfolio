@@ -70,7 +70,7 @@ const Projects = () => {
     title: "Coin Tracker",
     id: "cointracker",
     subtitle: "2022.10 (개인 프로젝트)",
-    images: ["/images/cointracker.png", "/images/cointracker2.png", "/images/cointracker3.png"],
+    images: ["/images/coin.png", "/images/coin2.png", "/images/coin3.png"],
     background: [
       "가상화폐 시세를 확인할 수 있는 ",
       <span className={styles.red}>웹사이트</span>,
@@ -159,7 +159,7 @@ const Projects = () => {
     github: "https://github.com/kjm541006/portfolio",
   };
 
-  const projectInfos = [TODOS_INFO, CATCHJOB_INFO, PORTFOLIO_INFO];
+  const projectInfos = [COINS_INFO, TODOS_INFO, CATCHJOB_INFO, PORTFOLIO_INFO];
 
   return (
     <>
