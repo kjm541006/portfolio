@@ -6,7 +6,12 @@ import Image from "next/image";
 
 const ProjectInfo = ({ info }) => (
   <div className={styles.projects_info_project}>
-    <div className={styles.projects_info_project_title}>{info.title}</div>
+    <div className={styles.projects_info_project_title}>
+      {" "}
+      <a href={info.url} target="_blank" rel="noopener noreferrer">
+        {info.title}
+      </a>
+    </div>
     <div className={styles.projects_info_project_subtitle}>{info.subtitle}</div>
     <div className={styles.projects_info_project_content}>
       <Carousel autoPlay infiniteLoop showThumbs={false}>
@@ -16,12 +21,12 @@ const ProjectInfo = ({ info }) => (
           </div>
         ))}
       </Carousel>
-      <div className={styles.projects_info_project_content_detail}></div>
+      {/* <div className={styles.projects_info_project_content_detail}></div> */}
     </div>
     <div className={styles.projects_info_detail}>
       <div className={styles.projects_info_detail_background}>
         <div className={styles.projects_info_detail_title}>
-          <b>개발배경</b>
+          <b className={styles.b}>개발배경</b>
         </div>
         <div className={`${styles.projects_info_detail_content} ${styles.break_word}`}>{info.background}</div>
       </div>
@@ -39,22 +44,21 @@ const ProjectInfo = ({ info }) => (
       <div className={styles.projects_info_detail_url}>
         <div className={styles.projects_info_detail_title}>
           URL :{" "}
-          <a
-            className={`${styles.projects_info_detail_content} ${styles.break_word}`}
-            href={info.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            바로가기
-          </a>
+          <span className={`${styles.projects_info_detail_content} ${styles.break_word}`}>
+            <a href={info.url} target="_blank" rel="noopener noreferrer">
+              {info.url}
+            </a>
+          </span>
         </div>
       </div>
       <div className={styles.projects_info_detail_github}>
         <div className={styles.projects_info_detail_title}>
           Github :{" "}
-          <a className={styles.projects_info_detail_content} href={info.github} target="_blank" rel="noopener noreferrer">
-            바로가기
-          </a>
+          <span className={styles.projects_info_detail_content}>
+            <a href={info.github} target="_blank" rel="noopener noreferrer">
+              {info.github}
+            </a>
+          </span>
         </div>
       </div>
     </div>
@@ -62,6 +66,28 @@ const ProjectInfo = ({ info }) => (
 );
 
 const Projects = () => {
+  const COINS_INFO = {
+    title: "Coin Tracker",
+    id: "cointracker",
+    subtitle: "2022.10 (개인 프로젝트)",
+    images: ["/images/cointracker.png", "/images/cointracker2.png", "/images/cointracker3.png"],
+    background: [
+      "가상화폐 시세를 확인할 수 있는 ",
+      <span className={styles.red}>웹사이트</span>,
+      "입니다. 사용자가 원하는 가상화폐를 선택하여 시세를 확인할 수 있으며, 가상화폐의 시세 변동을 확인할 수 있습니다.",
+    ],
+    learned: [
+      "React를 이용하여 개발하면서 ",
+      <span className={styles.red}>React와 Redux, Axios</span>,
+      "를 사용하여 개발하였으며, ",
+      <span className={styles.red}>상태관리 및 API 호출</span>,
+      "에 대한 이해도를 높일 수 있었습니다.",
+    ],
+    tech: "React, Redux, Axios",
+    url: "https://kjm541006.github.io/coin-tracker/",
+    github: "https://github.com/kjm541006/coin-tracker",
+  };
+
   const TODOS_INFO = {
     title: "Todos",
     id: "todos",
@@ -80,7 +106,7 @@ const Projects = () => {
       "에 대한 이해도를 높일 수 있었습니다.",
     ],
     tech: "React, Recoil, Styled-components",
-    url: "https://kjm541006.github.io/todos/",
+    url: "https://kjm541006.github.io/todo-list/",
     github: "https://github.com/kjm541006/todo-list",
   };
 
@@ -142,7 +168,9 @@ const Projects = () => {
           <div className={styles.projects_title_text}>Projects</div>
         </div>
         <div className={styles.projects_info}>
-          {projectInfos.map((info) => (console.log(info), (<ProjectInfo key={info.id} info={info} />)))}
+          {projectInfos.map((info) => (
+            <ProjectInfo key={info.id} info={info} />
+          ))}
         </div>
       </div>
     </>

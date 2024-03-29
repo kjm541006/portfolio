@@ -1,9 +1,11 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 .projects_wrapper {
   min-height: 100vh;
   width: 100%;
   padding: 6rem 0 4rem;
   margin: 0 auto;
-  background-color: yellow;
+  /* background-color: yellow; */
+  background-color: #ecf0f1;
 }
 
 .projects_title {
@@ -15,18 +17,22 @@
 
 .projects_info {
   width: 100%;
-  max-width: 70rem;
+  max-width: 100rem;
   margin: 0 auto;
   padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* gap: 40px; */
 }
 
 .projects_info_project {
-  background-color: #ffcccc;
+  background-color: beige;
   padding: 2rem 3rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
   box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
-  min-width: 300px;
+  min-width: 20%;
+  margin: 1.5rem 1rem;
 }
 
 .projects_info_project_title {
@@ -52,21 +58,30 @@
 }
 
 .projects_info_detail_title {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.3rem;
-  font-weight: 700;
+  margin-top: 1.4rem;
+  margin-bottom: 1.2rem;
+  font-family: "NanumSquare", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2rem;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .projects_info_detail_content {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.15rem;
-  font-weight: normal;
+  font-weight: 400;
+}
+
+.projects_info_detail_content > a {
+  text-decoration: underline;
+  color: blue;
 }
 
 .red {
   color: #ea3065;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 a.projects_info_detail_content {
@@ -79,8 +94,12 @@ a.projects_info_detail_content {
 }
 
 @media all and (max-width: 1023px) {
+  .projects_info {
+    display: block;
+  }
+
   .projects_info_project {
-    padding: 2rem 1.2rem;
+    padding: 2rem 2.5rem;
   }
 
   .projects_title {
