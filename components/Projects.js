@@ -26,19 +26,19 @@ const ProjectInfo = ({ info }) => (
     <div className={styles.projects_info_detail}>
       <div className={styles.projects_info_detail_background}>
         <div className={styles.projects_info_detail_title}>
-          <b className={styles.b}>개발배경</b>
+          <b className={styles.b}>{info.title}</b>
         </div>
         <div className={`${styles.projects_info_detail_content} ${styles.break_word}`}>{info.background}</div>
       </div>
       <div className={styles.projects_info_detail_learned}>
         <div className={styles.projects_info_detail_title}>
-          <b>배운점</b>
+          <b>LEARNED</b>
         </div>
         <div className={`${styles.projects_info_detail_content} ${styles.break_word}`}>{info.learned}</div>
       </div>
       <div className={styles.projects_info_detail_tech}>
         <div className={styles.projects_info_detail_title}>
-          사용기술 : <span className={styles.projects_info_detail_content}>{info.tech}</span>
+          TECH : <span className={styles.projects_info_detail_content}>{info.tech}</span>
         </div>
       </div>
       <div className={styles.projects_info_detail_url}>
@@ -72,15 +72,13 @@ const Projects = () => {
     subtitle: "2022.10 (개인 프로젝트)",
     images: ["/images/coin.png", "/images/coin2.png", "/images/coin3.png"],
     background: [
-      "가상화폐 시세를 확인할 수 있는 ",
-      <span className={styles.red}>웹사이트</span>,
-      "입니다. 사용자가 원하는 가상화폐를 선택하여 시세를 확인할 수 있으며, 가상화폐의 시세 변동을 확인할 수 있습니다.",
+      "가상화폐가 한창 인기가 많아지면서 관심을 가지게 되어 만든",
+      <span className={styles.red}>가상화폐 시세를 확인</span>,
+      "할 수 있는 웹사이트 입니다. 사용자가 원하는 가상화폐를 선택하여 시세를 확인할 수 있으며, 가상화폐의 시세 변동을 확인할 수 있습니다.",
     ],
     learned: [
-      "React를 이용하여 개발하면서 ",
-      <span className={styles.red}>React와 Redux, Axios</span>,
-      "를 사용하여 개발하였으며, ",
-      <span className={styles.red}>상태관리 및 API 호출</span>,
+      "React와 Typescript를 이용하여 개발하면서 ",
+      <span className={styles.red}>React와 Typescript, 외부 API 호출, 비동기</span>,
       "에 대한 이해도를 높일 수 있었습니다.",
     ],
     tech: "React, Redux, Axios",

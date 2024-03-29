@@ -70,8 +70,9 @@
 
 .projects_info_detail_content {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   font-weight: 400;
+  line-height: 1.6rem;
 }
 
 .projects_info_detail_content > a {
