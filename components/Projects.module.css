@@ -76,8 +76,12 @@
 }
 
 .projects_info_detail_content > a {
-  text-decoration: underline;
+  text-decoration: none;
   color: blue;
+}
+
+.projects_info_detail_content > a:hover {
+  text-decoration: underline;
 }
 
 .red {

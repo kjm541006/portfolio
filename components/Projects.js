@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styles from "./Projects.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ProjectInfo from "./projectComponents/ProjectsInfo";
@@ -163,7 +163,7 @@ const Projects = () => {
   const projectInfos = [COINS_INFO, TODOS_INFO, CATCHJOB_INFO, PORTFOLIO_INFO];
 
   return (
-    <>
+    <Fragment>
       <div className={styles.projects_wrapper} id="projects">
         <div className={styles.projects_title}>
           <div className={styles.projects_title_text}>Projects</div>
@@ -174,7 +174,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 
