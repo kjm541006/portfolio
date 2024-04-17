@@ -20,7 +20,6 @@ const ProjectInfo = ({ info }) => (
           </div>
         ))}
       </Carousel>
-      {/* <div className={styles.projects_info_project_content_detail}></div> */}
     </div>
     <ProjectDetail info={info} />
   </div>
